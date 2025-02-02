@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+
+    <!-- <style>
+            body{
+                background-image: url('background_login.jpg');
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                height: 100vh;
+      
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style> -->
+</head>
+
+<body>
+
+    <!-- <video class="video-background" autoplay loop muted playsinline>
+        <source src="background_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video> -->
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2 align="left">Sign In</h2>
+            <!-- <p>Please log in to your account</p> -->
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <!-- <label for="username">Username</label> -->
+                <input type="text" id="username" name="username" placeholder="Email or mobile number" align="centre"
+                    required>
+            </div>
+            <div class="form-group">
+                <!-- <label for="password">Password</label> -->
+                <div class="password-wrapper">
+                    <input type="password" id="password" name="password" placeholder="Password" align="centre" required>
+                    <!-- <i class="fa fa-eye password-toggle" id="togglePassword"></i> -->
+                    <!-- <i class="icons"></i> -->
+                </div>
+            </div>
+            <div class="captcha-group">
+                <!-- <label for="captchaInput">Captcha:</label> -->
+                <div class="captcha-wrapper">
+                    <input type="text" id="captchaInput" placeholder="Enter Captcha" required>
+                    <input type="text" id="captchaCode" disabled>
+                    <button type="button" id="refreshCaptcha" class="refresh-btn"><i
+                            class="fa fa-sync-alt"></i></button>
+                </div>
+            </div>
+            <button type="submit" class="btn">Login</button>
+
+            <p style="color: rgb(255, 255, 255 , 0.7);">
+                OR
+            </p>
+
+            <button type="submit" class="signincode"> Use a Sign-in code</button>
+
+            <p><a href="" class="forgotlink">Forgot password?</a></p>
+
+            <p align="left" style=" color: rgb(166, 166, 166); font-size: 16px;">New to chat? <a href="" class="signuplink">Sign up  now.</a></p>
+
+            <p style="color: #8c8c8c; font-size: 13px; margin-top: 11px; align-items: left; padding-top: 15px; ">
+                This page is protected by reCAPTCHA to ensure you're not a bot.
+            </p>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <!-- <footer> <div class="footer">
+        <p>Copyright 2022</p>
+        <a href="">about</a>
+        <a href="">chat with</a>
+
+    </div></footer> -->
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
